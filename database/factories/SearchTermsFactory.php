@@ -1,0 +1,23 @@
+<?php
+
+namespace Database\Factories;
+
+use App\Models\SearchTerms;
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Carbon;
+
+class SearchTermsFactory extends Factory
+{
+    protected $model = SearchTerms::class;
+
+    public function definition()
+    {
+        return [
+            'created_at' => Carbon::now(),
+            'updated_at' => Carbon::now(),
+            'terms' => $this->faker->word(),
+            'search_result' => $this->faker->randomNumber(),
+            'requester' => $this->faker->word(),
+        ];
+    }
+}
