@@ -1,4 +1,1 @@
-# TCA Central 
-
-## WIP 🚧
-# academic-conference-alerts
+# Academic-Conference-Alerts
